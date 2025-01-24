@@ -1,0 +1,6 @@
+Hello World!
+This is a test file.
+We will replace some words in this file.
+Hello again!
+The word Hello appears multiple times.
+HELLO in caps won't be replaced.
