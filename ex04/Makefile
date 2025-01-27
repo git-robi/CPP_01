@@ -1,7 +1,7 @@
 NAME = sedIsForLosers
 CXX = c++            
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98
-SOURCES = main.cpp FileReplacer.cpp
+SOURCES = main.cpp
 OBJECTS = $(SOURCES:.cpp=.o)
 
 all: $(NAME)
