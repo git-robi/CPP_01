@@ -1,6 +1,7 @@
 NAME = zombie
 CXX = c++            
-CXXFLAGS = -Wall -Wextra -Werror 
+CXXFLAGS = -Wall -Wextra -Werror -fsanitize=address
+LDFLAGS = -fsanitize=address
 SOURCES = main.cpp Zombie.cpp zombieHorde.cpp
 OBJECTS = $(SOURCES:.cpp=.o)
 HEADERS = Zombie.hpp

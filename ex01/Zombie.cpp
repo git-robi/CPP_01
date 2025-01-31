@@ -1,7 +1,10 @@
 #include <iostream>
 #include "Zombie.hpp"
 
-Zombie::Zombie(){}
+Zombie::Zombie()
+{
+    std::cout << "Zombie " << this->name << " is created!" << std::endl;
+}
 
 Zombie::Zombie(std::string zombieName)
 {
