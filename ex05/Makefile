@@ -1,6 +1,7 @@
 NAME = Harl
 CXX = c++            
-CXXFLAGS = -Wall -Wextra -Werror 
+CXXFLAGS = -Wall -Wextra -Werror -fsanitize=address
+LDFLAGS = -fsanitize=address
 SOURCES = main.cpp Harl.cpp
 OBJECTS = $(SOURCES:.cpp=.o)
 HEADERS = Harl.hpp
