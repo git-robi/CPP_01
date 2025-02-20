@@ -17,18 +17,20 @@
 #include <iostream>
 
 class Zombie
-{
-    public:
+{ 
+    private: 
 
     std::string name;
+
+    public:
 
     Zombie(std::string zombieName) : name(zombieName) {}
     ~Zombie();
     
-    void announce( void );
+    void announce();
 };
 
-Zombie* newZombie( std::string name );
-void randomChump( std::string name );
+Zombie* newZombie(std::string name);
+void randomChump(std::string name);
 
 #endif

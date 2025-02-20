@@ -12,7 +12,7 @@
 
 NAME = hiThisIsBrain
 CXX = c++            
-CXXFLAGS = -Wall -Wextra -Werror 
+CXXFLAGS = -Wall -Wextra -Werror -std=c++98
 SOURCES = main.cpp
 OBJECTS = $(SOURCES:.cpp=.o)
 

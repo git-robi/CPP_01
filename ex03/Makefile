@@ -12,7 +12,7 @@
 
 NAME = unnecessaryViolence
 CXX = c++            
-CXXFLAGS = -Wall -Wextra -Werror -fsanitize=address
+CXXFLAGS = -Wall -Wextra -Werror -std=c++98 -fsanitize=address
 LDFLAGS = -fsanitize=address
 SOURCES = main.cpp Weapon.cpp HumanA.cpp HumanB.cpp
 OBJECTS = $(SOURCES:.cpp=.o)

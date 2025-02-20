@@ -12,7 +12,7 @@
 
 NAME = zombie
 CXX = c++            
-CXXFLAGS = -Wall -Wextra -Werror 
+CXXFLAGS = -Wall -Wextra -Werror -std=c++98
 SOURCES = main.cpp Zombie.cpp newZombie.cpp randomChump.cpp
 OBJECTS = $(SOURCES:.cpp=.o)
 HEADERS = Zombie.hpp

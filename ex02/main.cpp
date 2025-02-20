@@ -17,7 +17,7 @@ int main(void)
     std::string string = "HI THIS IS BRAIN";
 
     std::string* stringPTR = &string;
-    std::string stringREF = string;
+    std::string& stringREF = string;
 
     std::cout << "Memory address of the string variable: " << &string << std::endl;
 
@@ -31,6 +31,14 @@ int main(void)
     
     std::cout << "Value pointed to by stringPTR: " << *stringPTR << std::endl;
 
+    std::cout << "Value pointed to by stringREF: " << stringREF << std::endl;
+
+    stringREF = "hola";
+
+    std::cout << "After changing value of stringREF\n" << std::endl;
+
+    std::cout << "Value of the string variable: " << string << std::endl;
+    std::cout << "Value pointed to by stringPTR: " << *stringPTR << std::endl;
     std::cout << "Value pointed to by stringREF: " << stringREF << std::endl;
 
     return (0);
